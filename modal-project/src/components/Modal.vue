@@ -1,10 +1,25 @@
 <template>
     <div class="backdrop">
-        <div class="modal">
-            <p>modal content</p>
+        <div class="modal" :class="{alert: type === 'alert'}">
+            <p>{{message}}</p>
+            <p>{{text}}</p>
         </div>
     </div>
 </template>
+
+<script>
+export default {
+    name: 'Modal',
+    props: ['message', 'text', 'type'],
+    data() {
+
+    },
+    methods: {
+
+    }
+}
+</script>
+
 
 <style scoped>
     .modal {
@@ -20,5 +35,9 @@
         background: rgba(0, 0, 0, 0.5);
         width: 100%;
         height: 100%;
+    }
+    .modal.alert {
+        background: crimson;
+        color: white;
     }
 </style>

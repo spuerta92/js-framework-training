@@ -3,7 +3,7 @@
     <h1> {{title}}</h1>
     <!-- <input type="text" ref="name">
     <button @click="handleClick">click me</button> -->
-    <Modal />
+    <Modal message="Welcome to my application!" :text="text" type="alert"/>
   </div>
 </template>
 
@@ -15,7 +15,8 @@ export default {
   components: { Modal },
   data() {
     return {
-      title: "My First Vue 3 App :)"
+      title: "My First Vue 3 App :)",
+      text: "Some other text"
     }
   },
   methods: {
