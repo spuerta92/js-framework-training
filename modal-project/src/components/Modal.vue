@@ -1,5 +1,5 @@
 <template>
-    <div class="backdrop">
+    <div class="backdrop" @click.self="closeModal">
         <div class="modal" :class="{alert: type === 'alert'}">
             <p>{{message}}</p>
             <p>{{text}}</p>
@@ -15,7 +15,9 @@ export default {
 
     },
     methods: {
-
+        closeModal() {
+            this.$emit('closemodal')
+        }
     }
 }
 </script>
