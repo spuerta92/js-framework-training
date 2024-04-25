@@ -4,9 +4,20 @@
     <!-- <input type="text" ref="name">
     <button @click="handleClick">click me</button> -->
     <div v-if="showModal">
-      <Modal message="Welcome to my application!" :text="text" type="alert" @closemodal="toggleModal"/>
+      <Modal message="Welcome to my application!" :text="text" type="alert" @closemodal="toggleModal">
+        <p>Get the best deals here</p>
+        <template v-slot:links>
+          <ul>
+            <li><a href="#">sign up</a></li>
+            <li><a href="#">log in</a></li>
+          </ul>
+        </template>
+      </Modal>
     </div>
     <button @click="toggleModal">open modal</button>
+    <teleport to='#textblock'>
+      <h3> teleport text </h3>
+    </teleport>
   </div>
 </template>
 
@@ -44,5 +55,8 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+ul {
+  list-style-type: none;
 }
 </style>

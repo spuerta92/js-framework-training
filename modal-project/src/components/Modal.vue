@@ -3,6 +3,8 @@
         <div class="modal" :class="{alert: type === 'alert'}">
             <p>{{message}}</p>
             <p>{{text}}</p>
+            <slot></slot>
+            <slot name="links"></slot>
         </div>
     </div>
 </template>
