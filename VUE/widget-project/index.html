@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Widgets</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+    <h1>Hello Vue!</h1>
+    <div id="app">
+        <p v-if="showMessage">{{ message }}</p>
+        <p v-show="showNumber">{{ number }}</p>
+        <button v-on:click="number++">+</button>
+        <button v-on:click="number--">-</button><br />
+        <button @click="changeMessage('new message')">New Message</button><br />
+        <button @click="toggleShowMessage">Toggle Message</button>
+        <button @click="toggleShowNumber">Toggle Number</button><br /><br />
+
+        <div class="box" v-on:mouseover="handleEvent">mouse over</div>
+        <div class="box" v-on:mouseleave="handleEvent">mouse leave</div>
+        <div class="box" v-on:dblclick="handleEvent">double click</div>
+        <div class="box" @mousemove="handleMouseMove">position - ({{x}},{{y}})</div><br /><br />
+
+        <div v-if="showPeople">
+            <table class="employee-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Employed</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr v-for="person in filteredPeople" :key="person.id" :class="{employed: person.isEmployed}" @click="toggleEmployed(person)">
+                        <td>{{ person.name }}</td>
+                        <td>{{ person.age }}</td>
+                        <td>{{ person.isEmployed ? 'yes' : 'no' }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div><br /><br />
+
+        <!--data binding-->
+        <a v-bind:href="url">a dynamic website url</a>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

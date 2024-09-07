@@ -1,0 +1,22 @@
+.box {
+    background-color: lightgray;
+    width: 100px;
+    height: 100px;
+    margin: 1em;
+}
+
+.employed {
+    background-color: lightgreen;
+}
+
+.employee-table {
+    border-style: solid;
+    border-color: black;
+    text-align: center;
+}
+
+th, td {
+    border-style: solid;
+    border-color: black;
+    padding: 0.5em;
+}
