@@ -1,36 +1,36 @@
 <template>
   <div class="app-container">
     <Header />
-    <Navbar />
-    <Home />
+    <router-view />
     <Footer />
   </div>
 </template>
 
 <script>
 import Header from './components/Header.vue'
+import Main from './components/Main.vue'
 import Footer from './components/Footer.vue'
-import Navbar from './components/Navbar.vue'
-import Home from './components/Home.vue'
 
 export default {
   name: 'App',
   components: {
     Header,
-    Footer,
-    Navbar,
-    Home
+    Main,
+    Footer
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.app-container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  overflow: auto;
+  margin: 0 auto;
+  min-width: 400px;
+  font-family: 'Times New Roman';
+  font-size: 1rem;
 }
 </style>
