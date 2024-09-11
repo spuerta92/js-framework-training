@@ -45,8 +45,6 @@ then
     sudo npm install -g serve
 fi
 
-sudo yum -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
-
 # Serve the project on default port 3000 (or another port)
 echo "Starting the Vue.js application..."
 serve -s dist -n
