@@ -49,4 +49,4 @@ npm run build
 
 # Serve the project on default port 3000 (or another port)
 echo "Starting the Vue.js application..."
-nohup serve -s dist -n &> serve.log &
+setsid nohup serve -s dist -n &> serve.log &
