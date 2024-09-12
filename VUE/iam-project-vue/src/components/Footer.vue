@@ -3,7 +3,6 @@
         <p>Powered by Vue.js</p>
         <p>Sebastian Puerta Hincapie © 2024</p><br />
     </div>
-
 </template>
 
 <script>

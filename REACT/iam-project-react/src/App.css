@@ -1,15 +1,13 @@
 .App {
-  text-align: center;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-link {
-  color: #61dafb;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  overflow: auto;
+  margin: 0 auto;
+  min-width: 400px;
+  font-family: 'Times New Roman';
+  font-size: 1rem;
 }
 
 @keyframes App-logo-spin {

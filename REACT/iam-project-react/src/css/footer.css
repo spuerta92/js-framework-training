@@ -1,0 +1,10 @@
+.footer-container {
+    background-image: linear-gradient(to right, black, rgb(41, 195, 234));
+    padding: 1em;
+    height: 100px;
+    width: 100%;
+    grid-row: 3;
+    text-align: left;
+    margin-top: 1em;
+    color: white;
+}

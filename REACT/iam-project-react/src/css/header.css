@@ -1,0 +1,8 @@
+.header-container {
+    background-image: linear-gradient(to right, rgb(41, 195, 234), white);
+    height: 100px;
+    width: 100%;
+    grid-row: 1;
+    text-align: left;
+    margin-bottom: 1em;
+}

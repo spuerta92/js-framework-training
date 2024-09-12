@@ -37,6 +37,12 @@
   max-zoom: 1.0;
 }
 
+body {
+  margin: 0 auto;
+  min-width: 400px;
+}
+
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
