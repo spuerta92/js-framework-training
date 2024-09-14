@@ -51,7 +51,7 @@ echo "Building the project..."
 npm run build
 
 # Serve the project on default port 3000 (or another port)
-echo "Starting the Vue.js application..."
+echo "Starting the React application..."
 pm2 serve build 3000 --name "iam-project-react"
 
 # relaunch app after reboot
