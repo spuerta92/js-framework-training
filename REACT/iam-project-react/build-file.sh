@@ -14,6 +14,9 @@ then
 	sudo yum install -y nodejs
 fi
 
+# background job manager (keeps ec2 instance running in the background after closing terminal)
+sudo npm install -g pm2
+
 # Navigate to project directory or clone repo if it doesn't exist
 PROJECT_DIR="js-framework-training"
 PROJECT_PATH="REACT/iam-project-vue"
@@ -49,4 +52,8 @@ npm run build
 
 # Serve the project on default port 3000 (or another port)
 echo "Starting the Vue.js application..."
-setsid nohup serve -s dist -n &> serve.log &
+pm2 serve build 3000 --name "iam-project-react"
+
+# relaunch app after reboot
+npm startup
+sudo pm2 save
