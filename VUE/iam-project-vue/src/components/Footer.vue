@@ -11,7 +11,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .footer-container {
     background-image: linear-gradient(to right, black, green);
     padding: 1em;

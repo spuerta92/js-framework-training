@@ -246,8 +246,7 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
 .resume-container {
     margin: 2em 4em 2em 4em;
     display: flex;

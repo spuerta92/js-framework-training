@@ -1,0 +1,11 @@
+.app-component {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    overflow: auto;
+    margin: 0 auto;
+    min-width: 400px;
+    font-family: 'Times New Roman';
+    font-size: 1rem;
+  }

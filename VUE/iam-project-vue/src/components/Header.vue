@@ -8,7 +8,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .header-container {
     background-image: linear-gradient(to right, green, white);
     height: 100px;

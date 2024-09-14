@@ -18,7 +18,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 ul.app-navbar {
   list-style-type: none;
   margin: 0;
