@@ -2,19 +2,26 @@
     <div class="navbar-container">
       <ul class="app-navbar">
         <li class="navbar-link"><router-link to="/">Home</router-link></li>
-        <li class="navbar-link"><router-link to="/views">Views</router-link></li>
         <li class="navbar-link"><router-link to="/coverletter">Cover Letter</router-link></li>
+        <li class="navbar-link"><a href="../assets/resumes/resume.pdf" download="download">Resume(PDF)</a></li>
         <li class="navbar-link"><router-link to="/certifications">Certifications</router-link></li>
         <li class="navbar-link"><router-link to="/repositories">Repositories</router-link></li>
-        <li class="navbar-link"><router-link to="/applications">Applications</router-link></li>
-        <li class="navbar-link"><router-link to="/testing">Testing</router-link></li>
+        <!-- <li class="navbar-link"><router-link to="/applications">Applications</router-link></li>
+        <li class="navbar-link"><router-link to="/testing">Testing</router-link></li> -->
+        <li class="navbar-link"><router-link to="/views">Views</router-link></li>
       </ul>
+      <router-view />
     </div>
 </template>
 
 <script>
 export default {
-
+  name: 'Navbar',
+  data() {
+    return {}
+  },
+  methods: {},
+  computed: {}
 }
 </script>
 

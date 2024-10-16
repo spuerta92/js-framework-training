@@ -3,7 +3,7 @@ import App from './App.vue';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.min.js'
 import { createWebHistory, createRouter } from 'vue-router'
-import Main from './components/Main.vue'
+import Home from './components/Home.vue'
 import Views from './components/Views.vue'
 import CoverLetter from './components/CoverLetter.vue'
 import Certifications from './components/Certifications.vue'
@@ -12,13 +12,14 @@ import Applications from './components/Applications.vue'
 import Testing from './components/Testing.vue'
 
 const routes = [
-  { path: '/', name: 'Home', component: Main },
+  { path: '/', name: 'Home', component: Home },
   { path: '/views', name: 'Views', component: Views },
   { path: '/coverletter', name: 'Cover Letter', component: CoverLetter },
-  { path: '/certifications', name: 'Views', component: Certifications },
-  { path: '/repositories', name: 'Views', component: Repositories },
-  { path: '/applications', name: 'Views', component: Applications },
-  { path: '/testing', name: 'Views', component: Testing }
+  { path: '/certifications', name: 'Certifications', component: Certifications },
+  { path: '/repositories', name: 'Repositories', component: Repositories },
+  { path: '/applications', name: 'Applications', component: Applications },
+  { path: '/testing', name: 'Testing', component: Testing },
+  { path: '', component: Home }
 ]
 
 const router = createRouter({

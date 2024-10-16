@@ -7,7 +7,12 @@
 
 <script>
 export default {
-
+  name: 'Footer',
+  data() {
+    return {}
+  },
+  methods: {},
+  computed: {}
 }
 </script>
 

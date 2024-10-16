@@ -1,16 +1,15 @@
 <template>
-    <div class="main-container">
-        <Navbar />
+    <div class="home-container">
         <div class="resume-container">
             <div class="header resume-section">
                 <section class="header-name">
-                    <h1>SEBASTIAN PUERTA HINCAPIE</h1>
+                    <p>SEBASTIAN PUERTA HINCAPIE</p>
                 </section>
                 <section class="header-role">
-                <h4>SENIOR SOFTWARE ENGINEER</h4> 
+                    <h4>SENIOR SOFTWARE ENGINEER</h4> 
                 </section>
                 <section class="header-contact-details">
-                    <p>New York • 914-564-7937 • puertahincapie.sebastian@gmail.com • linkedin.com/in/sebastianph/ </p>
+                    <p>New York • 914-564-7937 • puertahincapie.sebastian@gmail.com • <a href="https://linkedin.com/in/sebastianph/">linkedin</a> </p>
                 </section>
             </div><br />
             <div class="summary resume-section">
@@ -21,7 +20,7 @@
                 My goal is to become a leader and an expert practitioner in the software industry.</p>
             </div><br />
             <div class="qualifications resume-section">
-                <h3 class="section-name">QUALIFICATIONS</h3>
+                <p class="section-name">QUALIFICATIONS</p>
                 <p><b>Backend Frameworks:</b> ASP.NET Framework, ASP.NET MVC, .NET Core, Spring Boot</p>
                 <p><b>Frontend Frameworks:</b> Asp.Net Views, React.js, Angular.js, Vue.js, Ext.js</p>
                 <p><b>Database:</b> MySQL, SQL Server, MongoDB</p>
@@ -35,7 +34,7 @@
                 <p><b>AI Tools:</b> ChatGPT, GitHub CoPilot</p>
             </div><br />
             <div class="experience resume-section">
-                <h3 class="section-name"> EXPERIENCE </h3>
+                <p class="section-name"> EXPERIENCE </p>
                 <section class="experience1">
                     <div class="block-w-3">
                         <p class="col-company"><b>LTIMindtree (Full-Time)</b></p>
@@ -122,7 +121,7 @@
                 </section>
             </div><br />
             <div class="education resume-section">
-                <h3 class="section-name">EDUCATION</h3>
+                <p class="section-name">EDUCATION</p>
                 <section class="education1">
                     <p><b>Virginia Polytechnic Institute and State University Northern Virginia Center: College of Engineering</b></p>
                     <p>Master of Engineering in Computer Science</p>
@@ -179,7 +178,7 @@
                 </section>           
             </div><br />
             <div class="projects resume-section">
-                <h3 class="section-name"> PROJECTS </h3>
+                <p class="section-name"> PROJECTS </p>
                 <section class="project1">
                     <p><b>Capstone: Video Meeting Engagement Application</b></p>
                     <p>08/2023 - 12/2023</p>
@@ -212,7 +211,7 @@
                 </section>
             </div><br />
             <div class="certifications  resume-section">
-                <h3 class="section-name">CERTIFICATIONS / COURSES</h3>
+                <p class="section-name">CERTIFICATIONS / COURSES</p>
                 <p>Microsoft Azure Fundamentals - Azure Certification 09/2024</p>
                 <p>AWS Certified Cloud Practitioner - AWS Certification 07/2024 - 07/2027</p>
                 <p>AWS Certified Cloud Practitioner Essentials - AWS Certificate 06/2024</p>
@@ -222,16 +221,16 @@
                 <p>Data Quality Masterclass - Udemy Certificate 11/2023</p>
             </div><br />
             <div class="languages  resume-section">
-                <h3 class="section-name">LANGUAGES</h3>
+                <p class="section-name">LANGUAGES</p>
                 <p>English, Spanish</p>
             </div><br />
             <div class="affiliations  resume-section">
-                <h3 class="section-name">AFFILIATIONS</h3>
+                <p class="section-name">AFFILIATIONS</p>
                 <p>Toastmaster: Active Member 05/2024 - Current </p>
                 <p>Toastmasters: Sergeant-At-Arms 04/2023 - 05/2024</p>
             </div><br />
             <div class="interests  resume-section">
-                <h3 class="section-name">INTERESTS</h3>
+                <p class="section-name">INTERESTS</p>
                 <p>Basketball, Soccer, Swimming, Dancing, Nature Walks, Leisure Reading, Audio Books, Movies, Self-Development</p>
             </div>
         </div>
@@ -253,9 +252,4 @@ export default {
     flex-direction: column;
     flex-wrap: wrap;
 }
-
-div.header {
-    text-align: center;
-}
-
 </style>
