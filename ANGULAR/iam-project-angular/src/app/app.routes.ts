@@ -7,8 +7,11 @@ import { ApplicationsComponent } from './applications/applications.component';
 import { TestingComponent } from './testing/testing.component';
 import { ViewsComponent } from './views/views.component';
 
-export const routes: Routes = [  {
-    path: '',
+export const routes: Routes = [  
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '**', redirectTo: '/home' } ,
+  {
+    path: 'home',
     component: HomeComponent,
     title: 'Home page'
   },

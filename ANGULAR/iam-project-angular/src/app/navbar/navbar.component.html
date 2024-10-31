@@ -1,12 +1,13 @@
 <div class="navbar-container">
   <ul class="app-navbar">
-    <li class="navbar-link"><a [routerLink]="['/views']">Views</a></li>
-    <li class="navbar-link" ><a [routerLink]="['/coverletter']">Cover Letter</a></li>
-    <li class="navbar-link" ><a target="_blank" rel="noopener noreferrer" href="resume.pdf">Resume (PDF)</a></li>
-    <li class="navbar-link" ><a [routerLink]="['/certifications']">Certifications</a></li>
-    <li class="navbar-link" ><a [routerLink]="['/repositories']">Repositories</a></li>
-    <li class="navbar-link" ><a [routerLink]="['/applications']">Applications</a></li>
-    <li class="navbar-link" ><a [routerLink]="['/testing']">Testing</a></li>
+    <li class="navbar-link"><a [routerLink]="/">Home</a></li>
+    <li class="navbar-link"><a [routerLink]="/views">Views</a></li>
+    <li class="navbar-link" ><a [routerLink]="/coverletter">Cover Letter</a></li>
+    <li class="navbar-link" ><a target="_blank" rel="noopener noreferrer" href="/ANGULAR/iam-project-angular/src/assets/resumes/resume.pdf">Resume (PDF)</a></li>
+    <li class="navbar-link" ><a [routerLink]="/certifications">Certifications</a></li>
+    <li class="navbar-link" ><a [routerLink]="/repositories">Repositories</a></li>
+    <li class="navbar-link" ><a [routerLink]="/applications">Applications</a></li>
+    <li class="navbar-link" ><a [routerLink]="/testing">Testing</a></li>
   </ul>
 </div>
 <router-outlet />

@@ -1,7 +1,8 @@
 <template>
-  <div class="backdrop">
-    <div class="modal">
-        <p>model content</p>
+  <div @click="closeModal" class="backdrop">
+    <div class="modal" v-bind:class="{ sale: theme === 'sale'}">
+        <h1> {{header}} </h1>
+        <p>{{text}}</p>
     </div>
   </div>
 </template>
@@ -9,10 +10,17 @@
 <script>
 export default {
     name: 'Modal',
+    props: ['header', 'text', 'theme'],
+    data() {},
+    methods: {
+      closeModal() {
+        this.$emit('close');
+      }
+    }
 }
 </script>
 
-<style>
+<style scoped>
 .modal {
     width: 400px;
     padding: 20px;
@@ -27,6 +35,21 @@ export default {
     background: rgba(0, 0, 0, 0.5);
     width: 100%;
     height: 100%;
+}
+
+.modal h1 {
+  color: cyan;
+  border: none;
+  padding: 0;
+}
+
+.modal.sale {
+  background: crimson;
+  color: white;
+}
+
+.modal.sale h1 {
+  color: white;
 }
 
 </style>
